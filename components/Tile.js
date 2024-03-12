@@ -18,7 +18,7 @@ const Tile = ({ menu }) => {
         <Image style={{ width:50 , height:50}} source={menu.iconSrc}></Image>
         <Link href={menu.url} asChild>
             <Pressable>
-                <Text>{menu.title}</Text>
+                <Text style={styles.title}>{menu.title}</Text>
             </Pressable>
         </Link>
         <ColorBar color={menu.color}></ColorBar>
@@ -40,7 +40,14 @@ const styles = StyleSheet.create({
      shadowOpacity:0.2,
      shadowRadius:4,
      elevation:3
-   } 
+   },
+   title:{ 
+    textAlign:'center' , 
+    fontSize:16,
+    fontWeight: '300',
+    marginVertical:5
+  
+  }
 })
 
 export default Tile

@@ -16,7 +16,7 @@ export default function Layout() {
                   headerStyle:{ backgroundColor:colors.primary },
                   headerRight:() => <Entypo name="menu" size={25} color="white" />,
                   }} />
-                <StatusBar barStyle="light-content" backgroundColor="#6a51ae" />
+                <StatusBar barStyle="dark-content" backgroundColor={colors.primary} />
             </View> 
   )
 }
