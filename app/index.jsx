@@ -1,5 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
-import { FlatList, StyleSheet, Text, View ,Image, Button } from 'react-native';
+import { FlatList, StyleSheet, Text, View ,Image, Button , StatusBar } from 'react-native';
 import Tile from '../components/Tile';
 import colors from '../config/colors';
 import Ads from '../components/Ads';
@@ -35,6 +34,7 @@ export default function App() {
           headerLeft: props => <LogoTitle style={{ height:23,width:23 }} {...props} />,
         }}
       />
+       <StatusBar barStyle="light-content" backgroundColor={colors.primary}/>
        <Ads></Ads>
        <FlatList numColumns={2} data={menus} keyExtractor={ menu => menu.id.toString()} renderItem={({item}) => <Tile menu={item} ></Tile>  } ></FlatList>
     </View>
