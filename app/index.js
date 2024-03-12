@@ -6,15 +6,15 @@ import Ads from '../components/Ads';
 
 
 const menus = [
-  { id:1 , url:'news', title:'News &  Annoucements' , iconSrc:require('../assets/images/newspaper.png') , color:'yellow' },
-  { id:2 , url:'medical' ,title:'Medical Services' , iconSrc:require('../assets/images/newspaper.png') , color :'red' },
-  { id:3 , url:'eservice', title:'E-Service' , iconSrc:require('../assets/images/newspaper.png') , color:'green' },
-  { id:4 , url:'incident', title:'Incident Module' , iconSrc:require('../assets/images/newspaper.png') , color:'blue' },
-  { id:5 , url:'gallery', title:'Gallery' , iconSrc:require('../assets/images/newspaper.png') , color:'dodgerblue' },
-  { id:6 , url:'map', title:'LFZ Map' , iconSrc:require('../assets/images/newspaper.png') , color:'violet' },
-  { id:6 , url:'events',title:'Events' , iconSrc:require('../assets/images/newspaper.png') , color:'orange' },
-  { id:6 , url:'sustainability',title:'Sustainability' , iconSrc:require('../assets/images/newspaper.png') , color:'red' },
-  { id:6 , url:'directory',title:'Directory' , iconSrc:require('../assets/images/newspaper.png') , color:'green' },
+  { id:1 , url:'news', title:'News &  Annoucements' , iconSrc:require('../assets/images/newspaper.png') , color:'#feae25' },
+  { id:2 , url:'medical' ,title:'Medical Services' , iconSrc:require('../assets/images/medical.png') , color :'#ff3855' },
+  { id:3 , url:'eservice', title:'E-Service' , iconSrc:require('../assets/images/internet.png') , color:'#37ce64' },
+  { id:4 , url:'incident', title:'Incident Module' , iconSrc:require('../assets/images/warning-menu.png') , color:'#004fc2' },
+  { id:5 , url:'gallery', title:'Gallery' , iconSrc:require('../assets/images/upload.png') , color:'#0395de' },
+  { id:6 , url:'map', title:'LFZ Map' , iconSrc:require('../assets/images/map-menu.png') , color:'#ad2ef5' },
+  { id:6 , url:'events',title:'Events' , iconSrc:require('../assets/images/events-menu.png') , color:'#feae25' },
+  { id:6 , url:'sustainability',title:'Sustainability' , iconSrc:require('../assets/images/durable.png') , color:'#ff3855' },
+  { id:6 , url:'directory',title:'Directory' , iconSrc:require('../assets/images/file-system.png') , color:'#37ce64' },
 ]
 
 export default function App() {
