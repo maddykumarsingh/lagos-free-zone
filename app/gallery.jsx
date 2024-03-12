@@ -1,21 +1,18 @@
-import { View, Text , StyleSheet , StatusBar , FlatList , Image } from 'react-native'
+import { View,  StyleSheet  } from 'react-native'
 import React from 'react'
-import colors from '../config/colors'
-import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
+import Gallery from '../components/Gallery';
 
-const images = ['' ,'' ,'' , '']
+const images = ['https://www.lagosfreezone.com/media/1293/23s.jpg' ,'https://www.lagosfreezone.com/media/1305/29s.jpg' ,'https://www.lagosfreezone.com/media/1291/22s.jpg' , 'https://www.lagosfreezone.com/media/1307/36s.jpg'
+,'https://www.lagosfreezone.com/media/1317/31s.jpg'
+]
 
 
-const ImageTile = () => {
-  return( <View style={{width:'44%' , height:200, margin:10 ,padding:10 }}>
-       <Image resizeMode='contain' style={{width:'100%' ,height:'100%'}} source={require('../assets/images/medical.png')}></Image>
-     </View>)
-}
+
 
 const GalleryScreen = () => {
   return (
     <View style={styles.container}>
-      <FlatList  numColumns={2} data={images} keyExtractor={ (menu , index ) => index.toString()} renderItem={({item}) => <ImageTile />  } ></FlatList>
+        <Gallery images={images} />
     </View>
   )
 }
