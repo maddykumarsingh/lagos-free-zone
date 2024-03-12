@@ -12,16 +12,16 @@ const ColorBar = ({ color }) => {
     )
 }
 
-const Tile = ({ name , url, color }) => {
+const Tile = ({ menu }) => {
   return (
     <View style={styles.container}>
-        <Image style={{ width:50 , height:50}} source={{ uri: 'https://www.searchenginejournal.com/wp-content/uploads/2019/07/the-essential-guide-to-using-images-legally-online.png' }}></Image>
-        <Link href={url} asChild>
+        <Image style={{ width:50 , height:50}} source={menu.iconSrc}></Image>
+        <Link href={menu.url} asChild>
             <Pressable>
-                <Text>{name}</Text>
+                <Text>{menu.title}</Text>
             </Pressable>
         </Link>
-        <ColorBar color={color}></ColorBar>
+        <ColorBar color={menu.color}></ColorBar>
     </View>
   )
 }
